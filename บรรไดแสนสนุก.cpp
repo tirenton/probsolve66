@@ -4,8 +4,7 @@ using namespace std;
 
 int maxx2(vector<int> lst,int x){
     int max = -100010;
-    for (int i=0;i<x;i++){
-        if (i>4)return max;
+    for (int i=0;i<4;i++){
         if (max < lst[x-i-1])max = lst[x-i-1];
     }
     return max;
