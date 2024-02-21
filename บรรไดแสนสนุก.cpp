@@ -2,8 +2,8 @@
 #include <vector>
 using namespace std;
 
-int maxx2(vector<int> lst,int x){
-    int max = -100010;
+int maxx2(vector<int>& lst,int x){
+    int max = -1000000010;
     for (int i=0;i<4;i++){
         if (max < lst[x-i-1])max = lst[x-i-1];
     }
